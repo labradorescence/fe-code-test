@@ -1,3 +1,35 @@
+# Code Challenge
+Welcome to the code challenge part of the application process for TNR.
+
+## Instructions
+We want you to spend 2-4 hours on this, and you might not finish all of the features in that time. We'd prefer to see 
+fewer finished features rather than many half-finished features. See below for priorities. 
+
+We're also looking for well-organized code, and a good looking result. And we'd like to see how you think about coding. 
+So, document your process, any questions you had, and any assumptions that you made.
+
+## The Task
+Your challenge is to style our new search page. Here are the assets from the designer (these are not actually from our designer):
+
+###top 3 results like this:
+![desktop-top](design-assets/desktop-top-results.png)
+![mobile-top](design-assets/mobile-top-results.png)
+
+###the rest of the results like this:
+![desktop-lower](design-assets/desktop-lower-results.png)
+![mobile-lower](design-assets/mobile-lower-results.png)
+
+
+Notice that there are desktop designs, and mobile designs. Please take this starter app and implement the designs. You can 
+see the code for the current search results widget [here](src/Search.js). 
+
+We recommend you spend between 2-4 hours on this and go ahead and send us the result. Please also add to this readme any 
+questions you would want to ask, and the assumptions you made.
+
+
+
+# Docs from CRA:
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
