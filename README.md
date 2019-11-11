@@ -9,13 +9,13 @@ We're also looking for well-organized code, and a good looking result. And we'd 
 So, document your process, any questions you had, and any assumptions that you made.
 
 ## The Task
-Your challenge is to style our new search page. Here are the assets from the designer (these are not actually from our designer):
+Your challenge is to build and style React components for our new search page. Here are the assets from the designer (these are not actually from our designer):
 
-###top 3 results like this:
+### The top 3 results should look like this:
 ![desktop-top](design-assets/desktop-top-results.png)
 ![mobile-top](design-assets/mobile-top-results.png)
 
-###the rest of the results like this:
+### The rest of the results should look like this:
 ![desktop-lower](design-assets/desktop-lower-results.png)
 ![mobile-lower](design-assets/mobile-lower-results.png)
 
