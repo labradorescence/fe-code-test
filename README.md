@@ -15,6 +15,7 @@ Your challenge is to build and style React components for our new search page. H
 ![desktop-top](design-assets/desktop-top-results.png)
 ![mobile-top](design-assets/mobile-top-results.png)
 
+<br /><br /><br />
 ### The rest of the results should look like this:
 ![desktop-lower](design-assets/desktop-lower-results.png)
 ![mobile-lower](design-assets/mobile-lower-results.png)
