@@ -15,10 +15,10 @@ class Search extends React.Component {
   }
 
   render() {
-    return <div>
+    return <main>
       Search: <input type="text" value={this.state.value} onChange={this.handleChange}/>
       Results: <SearchResults term={this.state.value} />
-    </div>
+    </main>
   }
 }
 
