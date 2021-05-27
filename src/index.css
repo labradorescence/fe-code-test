@@ -11,3 +11,350 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+}
+
+/* NAV */
+nav{
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: .15rem solid rgb(203, 203, 203);
+}
+
+.nav-links{
+  display: flex;
+  list-style: none;
+  height: 100%;
+  clip-path: circle?.(100px);
+  background-color: lightcoral;
+  margin-top: 10rem;
+}
+
+button{
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.nav-left{
+ display: flex;
+ position: absolute;
+ left: 20px;
+ align-items: center;
+}
+
+.hamburger-container{
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.hamburger-btn{
+  height: 100%;
+  width: 100%;
+}
+
+.hamburger-line{
+  background: black;
+  width: 1rem;
+  height: 1px;
+  margin-top: 2px;
+  border-radius: 10%;
+}
+
+.logo{
+  height: 1.2rem;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.centerlogo{
+  height: 2rem;
+}
+
+.nav-right{
+  position: absolute;
+  right: 15px;
+}
+
+.magBtn, .subsBtn{
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0 .3rem 0 .3rem;
+}
+
+/* END of NAV */
+
+
+/* HIDE SEARCH BAR */
+.hide-search{
+  display: block;
+  position: absolute;
+  background: white;
+  width: 100%;
+  top: 2rem;
+  height: 1.5rem;
+  transition: all 1s ease-out;
+}
+/* end of HIDE SEARCH BAR */
+
+
+/* SEARCH */
+.search{
+  font-size: .7rem;
+  text-transform: uppercase;
+}
+.search-input{
+  border: none;
+  border-bottom: 1px grey solid;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding-left: .3rem;
+}
+/* end of SEARCH */
+
+
+
+/* ABOVE RESULT SECTION */
+.above-result-container{
+  width: 100%;
+  /* border: solid .5px blue; */
+  display: flex;
+  justify-content: center;
+}
+
+.above-result{
+  width: 80%;
+}
+
+.yourresult{
+  color: rgb(213, 1, 1);
+  font-weight:900;
+  font-size: .8rem;
+  letter-spacing: -1px;
+}
+
+.urinput{
+  color:black;
+  font-size: 1.5rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: 100;
+  margin-left: 1rem;
+}
+/* END of ABOVE RESULT SECTION */
+
+
+
+
+/* TOP RESULT */
+a{
+  color: black;
+  text-decoration: none;
+}
+
+.top-result-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.top-result-section{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-result-articles{
+  margin: 0 .8rem 0 0;
+  width: 30rem;
+}
+
+/* Used aspect-ratio at 3/2 to show same size images */
+.article-img, .default-img{
+  float: left;
+  object-fit: cover;
+  width: 100%;
+  height: undefined;
+  aspect-ratio: 3/2;
+  margin: 0 0 .5rem 0;
+}
+
+.year{
+  font-size: .5rem;
+  margin: 0 0 .5rem 0;
+  color: rgb(77, 77, 77);
+}
+
+.title, .bottom-title{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 540;
+}
+
+.subtitle{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: .9rem;
+  margin: .4rem 0 .4rem 0;
+}
+
+.author{
+  font-size: .7rem;
+  font-weight: 900;
+  margin: .5rem 0 0 0;
+}
+/* END of TOP RESULT */
+
+
+
+
+/* MOST POPULAR */
+.most-pop-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 4rem 0 1rem 0;
+}
+
+.most-pop-box{
+  width: 80%;
+}
+
+.most-pop{
+  color: rgb(213, 1, 1);
+  font-weight:900;
+  font-size: .8rem;
+  letter-spacing: -1px;
+}
+/* END of MOST POPULAR */
+
+
+
+/* BOTTOM RESULT */
+.bottom-result-container{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.bottom-result-section{
+  width: 80%;
+}
+
+
+/* span tag doesn't take margin-top so make display as inline-block or inline */
+/* <li> display: inline so the article titles are on one line  */
+.bottom-results {
+  display: inline;
+  border-top: 1px solid rgb(237, 3, 3);
+  padding-top: 2.1rem;
+  padding-bottom: 1.1rem;
+  line-height: 4rem;
+  vertical-align: center;
+}
+
+.bottom-title{
+  font-size: 1.8rem;
+  margin-right: .5rem;
+  /* word-wrap: break-word; */
+}
+
+/* image wasn't vertically centered using `align-itmes:center` or align-content:center so `vertical-align: -25%` has been used */
+.bottom-img, .bottom-img-default{
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 50%;
+  vertical-align: -25%;
+  margin: 0 .5rem 0 0;
+  align-content:center;
+}
+
+.bottom-author{
+  margin-right: 2rem;
+}
+/* END of BOTTOM RESULT  */
+
+
+@media only screen and (max-width: 600px){
+  .centerlogo{
+      display:none;
+  }
+
+  /* ABOVE RESULT SECTION */
+  .above-result{
+      width: 95%;
+      margin-bottom: 1rem;
+  }
+  /* END of ABOVE RESULT SECTION */
+
+
+  /* TOP RESULT */
+  .top-result-container{
+      min-width: 100%;
+  }
+  .top-result-section{
+      width: 95%;
+      display: flex;
+      flex-wrap:wrap;
+  }
+  
+  .top-result-articles{
+      margin-bottom: 2rem;
+      min-width: 100%;
+  }
+  /* END of TOP RESULT */
+
+  /* BOTTOM */
+  .most-pop-box{
+      width: 95%;
+  }
+
+  .bottom-result-container{
+
+  }
+
+  .bottom-result-section{
+      width: 95%;
+  }
+
+  .bottom-results{
+      display:flex;
+      border-top: 0;
+      border-bottom: 1px solid rgb(237, 3, 3);
+      padding-top: 0;
+      padding-bottom: 0;
+      line-height: 1.5rem;
+      /* align-items:center;
+      vertical-align: center; */
+  }
+
+  .bottom-img, .bottom-img-default{
+      display: grid;
+      height: 3rem;
+      width: 3rem;
+      border-radius: 50%;
+      margin: .7rem .5rem 0 0;
+  }
+
+  .bottom-title{
+      display: grid;
+      margin-left: 4rem;
+      margin-top: -2.5rem;
+      font-size: 1.8rem;
+      margin-right: .5rem;
+  }
+
+  .bottom-author{
+      display: grid;
+      margin-left: 4rem;
+  }
+}
